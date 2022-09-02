@@ -1,18 +1,47 @@
 {
   "name": "nstock",
+  "version": "0.1.0-beta",
+  "description": "naver stock data crawler",
+  "keywords": [
+    "naver",
+    "stock",
+    "finance",
+    "crawling"
+  ],
+  "homepage": "https://github.com/gem763/nstock",
+  "bugs": {
+    "url": "https://github.com/gem763/nstock/issues",
+    "email": "gem763@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "quantlab",
+    "email": "gem763@gmail.com",
+    "url": "https://github.com/gem763"
+  },
+  "main": "dist/nstock.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gem763/nstock.git"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
   "type": "module",
-  "files": ["dist"],
-
+  "dependencies": {
+    "nstock": "^0.1.0-beta"
+  },
+  "engines": {
+    "node": ">=16.14.0",
+    "npm": ">=8.3.1"
+  },
   "module": "./dist/nstock.js",
   "exports": {
     ".": {
       "import": "./dist/nstock.js"
     }
   },
-
-  "private": true,
-  "version": "0.0.0",
-  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
